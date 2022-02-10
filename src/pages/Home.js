@@ -17,9 +17,8 @@ export default function Home() {
       axios.get(Apis.stocksList).then((res) => {
         dispatch(saveStocksList(res.data));
       }).catch((error) => {
-        console.log('an error occured');
+        console.log('an error ocurred');
       });
-      
     }
   }, []);
   return (

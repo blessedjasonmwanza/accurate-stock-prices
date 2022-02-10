@@ -7,6 +7,7 @@ const stocksSlice = createSlice({
   initialState: {
     profiles: [],
     stocksList: [],
+    currentData: {}
   },
   reducers: {
     saveProfiles: (state, action) => {
@@ -17,6 +18,9 @@ const stocksSlice = createSlice({
       Save('stocksList', action.payload);
       state.stocksList = saved('stocksList');
     },
+    currentCompany: (state, action) => {
+      state.currentData = action.payload;
+    }
     // searchProfile: (state, action) => {
     //   const newState = state.stocks.map((mission) => (mission.mission_id === action.payload ? ({ ...mission, status: 'booked' }) : mission));
     //   state.stocks = newState;
@@ -31,4 +35,5 @@ export default stocksSlice.reducer;
 export const {
   saveProfiles,
   saveStocksList,
+  currentCompany,
 } = stocksSlice.actions;

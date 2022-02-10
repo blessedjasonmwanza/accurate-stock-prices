@@ -27,6 +27,41 @@
   word-spacing: 3px;
   font-family: 'Lato', var(--default-font-family);
 }
+/* Page Header */
+.page-header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 44px;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #555;
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: -moz-none;
+  z-index: 9999;
+}
+.page-header .back-icon {
+  border: none;
+  font-size: 22px;
+  color: #555;
+  background: none;
+  margin-left: 10px;
+  cursor: pointer;
+  outline: none;
+}
+.page-header .title {
+  margin-left: -40px;
+  font-weight: 500;
+  font-size: 18px;
+}
 
 main {
   display: flex;
