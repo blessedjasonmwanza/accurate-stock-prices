@@ -4,6 +4,7 @@
   margin-bottom: 16px;
   padding: 16px 16px 0 16px;
   box-sizing: border-box;
+  max-width: 500px;
 }
 
 .card .row {
@@ -45,4 +46,29 @@
 
 .stockLogo {
   max-width: 500px;
+}
+.stockInfo h2 {
+  font-family: 'Google Sans',Roboto,Arial,sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.5rem;
+}
+
+.stockInfo p {
+  letter-spacing: .025em;
+  font-family: Roboto,Arial,sans-serif;
+  font-size: .75rem;
+  font-weight: 400;
+  padding-bottom: 16px;
+  line-height: 1.4;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+@media screen and (max-width: 756px) {
+  .card {
+    width: 99%;
+    max-widtH: 100%;
+  }
 }

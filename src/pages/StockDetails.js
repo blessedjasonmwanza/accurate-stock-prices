@@ -14,6 +14,7 @@ export default function StockDetails() {
   // current
   const dispatch = useDispatch();
   useEffect(() => {
+    window.scrollTo(0, 0);
     const savedData = JSON.parse(localStorage.getItem('profiles')) || [];
     if (savedData && savedData !== null && savedData.find(profile => profile.symbol === symbol)) {
       savedData.map(profile => {
@@ -36,7 +37,7 @@ export default function StockDetails() {
   return (
     <>
       <PageHeader  title={companyName}/>
-      <main>
+      <main style={{display:'flex', flexFlow: 'column', gap: '30%', flexFlow: 'row wrap',alignItems: 'center'}}>
         <div className="card">
           <img src={image} className="stockLogo"/>
           <div className="row">
@@ -92,6 +93,14 @@ export default function StockDetails() {
             <a href={website} target="_blank" className="row-value">{website}</a>
           </div>
         </div>
+        <section className="card stockInfo">
+          <h2>
+            About
+          </h2>
+          <p>
+            {description}
+          </p>
+        </section>
       </main>
     </>
   );
