@@ -1,21 +1,32 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
-import { useNavigate } from "react-router-dom";
+import PropTypes from 'prop-types';
+import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
+import { useNavigate } from 'react-router-dom';
 
-export default function PageHeader(props) {
+const PageHeader = ({ title }) => {
   const history = useNavigate();
   return (
     <div className="page-header">
-      <button className="back-icon" onClick={() => history(-1)}>
+      <button className="back-icon" type="button" onClick={() => history(-1)}>
         <FontAwesomeIcon icon={faChevronLeft} />
       </button>
       <center>
         <span className="title">
-          {props.title}
+          {title}
         </span>
       </center>
-      <span></span>
+      <span />
     </div>
-  )
-}
+  );
+};
+
+PageHeader.defaultProps = {
+  title: '',
+};
+
+PageHeader.propTypes = {
+  title: PropTypes.string,
+};
+
+export default PageHeader;

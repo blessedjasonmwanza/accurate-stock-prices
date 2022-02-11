@@ -13,16 +13,18 @@
   min-height: 43px;
   box-sizing: border-box;
   display: flex;
+  /* stylelint-disable-next-line */
   box-pack: justify;
   -webkit-box-pack: justify;
   justify-content: space-between;
   -webkit-box-align: center;
+  /* stylelint-disable-next-line */
   box-align: center;
   align-items: center;
-  align-content:center;
-  letter-spacing: .01785714em;
-  font-family: 'Lato', Roboto,Arial,sans-serif;
-  font-size: .875rem;
+  align-content: center;
+  letter-spacing: 0.01785714em;
+  font-family: 'Lato', Roboto, Arial, sans-serif;
+  font-size: 0.875rem;
   line-height: 1.25rem;
   gap: 200px;
 }
@@ -39,16 +41,18 @@
   overflow: hidden;
   display: flex;
   -webkit-box-align: center;
+  /* stylelint-disable-next-line */
   box-align: center;
   align-items: center;
-  text-decoration:none;
+  text-decoration: none;
 }
 
 .stockLogo {
   max-width: 500px;
 }
+
 .stockInfo h2 {
-  font-family: 'Lato',Roboto,Arial,sans-serif;
+  font-family: 'Lato', Roboto, Arial, sans-serif;
   font-size: 1.125rem;
   font-weight: 400;
   letter-spacing: 0;
@@ -56,9 +60,9 @@
 }
 
 .stockInfo p {
-  letter-spacing: .025em;
-  font-family: Roboto,Arial,sans-serif;
-  font-size: .75rem;
+  letter-spacing: 0.025em;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 0.75rem;
   font-weight: 400;
   padding-bottom: 16px;
   line-height: 1.4;
@@ -69,6 +73,6 @@
 @media screen and (max-width: 756px) {
   .card {
     width: 99%;
-    max-widtH: 100%;
+    max-width: 100%;
   }
 }

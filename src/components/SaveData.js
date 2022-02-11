@@ -1,8 +1,5 @@
 const Save = (key, data) => {
-  data = Array.from(data);
-  localStorage.setItem(key, JSON.stringify(data));
+  localStorage.setItem(key, JSON.stringify(Array.from(data)));
 };
-export const saved = (key) => {
-  return JSON.parse(localStorage.getItem(`${key}`));
-}
+export const saved = (key) => JSON.parse(localStorage.getItem(`${key}`));
 export default Save;

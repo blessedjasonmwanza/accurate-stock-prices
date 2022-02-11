@@ -1,6 +1,7 @@
-*{
+* {
   -webkit-tap-highlight-color: transparent !important;
 }
+
 .brand-header {
   display: flex;
   position: fixed;
@@ -27,6 +28,7 @@
   word-spacing: 3px;
   font-family: 'Lato', var(--default-font-family);
 }
+
 /* Page Header */
 .page-header {
   display: flex;
@@ -48,6 +50,7 @@
   -moz-user-select: -moz-none;
   z-index: 9999;
 }
+
 .page-header .back-icon {
   border: none;
   font-size: 22px;
@@ -57,6 +60,7 @@
   cursor: pointer;
   outline: none;
 }
+
 .page-header .title {
   margin-left: -40px;
   font-weight: 500;
@@ -91,7 +95,7 @@ main {
   flex-flow: column;
   text-decoration: none;
   justify-content: space-between;
-  outline:none
+  outline: none;
 }
 
 .stock-card:hover {
@@ -111,9 +115,9 @@ main {
 }
 
 .stock-card .company {
-  letter-spacing: .01785714em;
-  font-family: 'Lato', Roboto,Arial,sans-serif;
-  font-size: .999rem;
+  letter-spacing: 0.01785714em;
+  font-family: 'Lato', Roboto, Arial, sans-serif;
+  font-size: 0.999rem;
   line-height: 1.25rem;
   color: #9aa0a6;
 }
@@ -132,7 +136,7 @@ main {
 
 .stock-card .stock-price span {
   background: #e6f4ea;
-  letter-spacing: .00625em;
+  letter-spacing: 0.00625em;
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.5rem;
@@ -147,7 +151,7 @@ main {
 }
 
 .search-container {
-  display:flex;
+  display: flex;
   width: 90%;
   justify-content: space-between;
   margin: 10px 0;
@@ -160,9 +164,9 @@ main {
   padding: 8px 5px;
   border-radius: 4px;
   min-width: 500px;
-  letter-spacing: .01785714em;
-  font-family: 'Lato', Roboto,Arial,sans-serif;
-  font-size: .975rem;
+  letter-spacing: 0.01785714em;
+  font-family: 'Lato', Roboto, Arial, sans-serif;
+  font-size: 0.975rem;
   line-height: 1.25rem;
   outline: none;
   transition: 0.6s;
@@ -170,16 +174,18 @@ main {
   align-items: center;
   align-content: center;
 }
+
 .search-container input:focus {
   box-shadow: 0 0 0 3px rgba(4, 156, 85, 0.288) !important;
 }
+
 .search-container input::placeholder {
-  opacity: .4;
+  opacity: 0.4;
 }
 
 .search-container svg {
   color: #666;
-  margin:  0 20px;
+  margin: 0 20px;
   margin-top: 10px;
 }
 
@@ -190,12 +196,14 @@ main {
     margin: 0 auto;
     align-self: center;
   }
+
   .search-container {
     width: 100%;
     flex-flow: column;
     justify-content: center;
     text-align: center;
   }
+
   .stock-card {
     width: calc(45vw - 18px);
   }
