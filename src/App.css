@@ -1,5 +1,5 @@
 * {
-  -webkit-tap-highlight-color: transparent !important;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .brand-header {
@@ -104,7 +104,7 @@ main {
 }
 
 .stock-card:focus {
-  box-shadow: 0 0 0 3px rgb(4 156 85 / 50%) !important;
+  box-shadow: 0 0 0 3px rgb(4 156 85 / 50%);
 }
 
 .stock-card .company,
@@ -147,7 +147,7 @@ main {
 }
 
 .stock-card .stock-price span:hover {
-  box-shadow: 0 0 0 3px rgba(4, 156, 85, 0.288) !important;
+  box-shadow: 0 0 0 3px rgba(4, 156, 85, 0.288);
 }
 
 .search-container {
@@ -176,7 +176,7 @@ main {
 }
 
 .search-container input:focus {
-  box-shadow: 0 0 0 3px rgba(4, 156, 85, 0.288) !important;
+  box-shadow: 0 0 0 3px rgba(4, 156, 85, 0.288);
 }
 
 .search-container input::placeholder {
