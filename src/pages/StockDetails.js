@@ -27,10 +27,7 @@ export default function StockDetails() {
         savedData.push(res.data[0]);
         dispatch(saveProfiles(savedData));
         dispatch(currentCompany(res.data[0]));
-      }).catch((error) => {
-        console.error(error);
-        console.log('an error ocurred');
-      });
+      }).catch((error) => error);
     }
   }, []);
   const {

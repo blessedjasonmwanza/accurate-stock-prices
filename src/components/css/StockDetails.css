@@ -13,13 +13,9 @@
   min-height: 43px;
   box-sizing: border-box;
   display: flex;
-  /* stylelint-disable-next-line */
-  box-pack: justify;
   -webkit-box-pack: justify;
   justify-content: space-between;
   -webkit-box-align: center;
-  /* stylelint-disable-next-line */
-  box-align: center;
   align-items: center;
   align-content: center;
   letter-spacing: 0.01785714em;
@@ -41,8 +37,6 @@
   overflow: hidden;
   display: flex;
   -webkit-box-align: center;
-  /* stylelint-disable-next-line */
-  box-align: center;
   align-items: center;
   text-decoration: none;
 }

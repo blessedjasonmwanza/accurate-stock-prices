@@ -18,10 +18,7 @@ export default function Home() {
     } else {
       axios.get(Apis.stocksList).then((res) => {
         dispatch(saveStocksList(res.data));
-      }).catch((error) => {
-        console.error(error);
-        console.log('an error ocurred');
-      });
+      }).catch((error) => error);
     }
   }, []);
 
@@ -32,7 +29,6 @@ export default function Home() {
           || company.name.search(value) !== -1
           || company.symbol.search(value) !== -1
       ));
-      console.log(results);
       dispatch(searchResults(results));
     } else {
       dispatch(searchResults(savedData));
