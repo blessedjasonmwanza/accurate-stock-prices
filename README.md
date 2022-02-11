@@ -91,3 +91,5 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [CREATIVE COMMONS CORPORATION](./LICENSE) licensed.
+
+> UI Inspired by [Nelson Sakwa on Behance](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs))
