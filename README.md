@@ -33,7 +33,7 @@ To get a local copy up and running follow these simple example steps.
 - Code Editor
 ### Setup
 
-- Clone repository using this command in terminal ` git clone https://github.com/cwaku/accurate-stock-prices.git`
+- Clone repository using this command in terminal ` git clone https://github.com/blessedjasonmwanza/accurate-stock-prices.git`
 - Change directory to the cloned repository `cd accurate-stock-prices`
 - Install dependencies using `npm install`
 - run `npm start`
@@ -82,7 +82,7 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/cwaku/accurate-stock-prices/issues).
+Feel free to check the [issues page](https://github.com/blessedjasonmwanza/accurate-stock-prices/issues).
 
 ## Show your support
 
