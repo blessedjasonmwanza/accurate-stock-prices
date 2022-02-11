@@ -1,0 +1,210 @@
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.brand-header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 44px;
+  background: var(--theme-color);
+  width: 100%;
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  color: #f3f5f3;
+  stroke: #9da19f;
+  font-size: 28px;
+  font-weight: 900;
+  -webkit-user-drag: none;
+  user-select: none;
+  -webkit-user-select: none;
+  text-shadow: -1px 1px 2px #0a85b6d3;
+  margin: 0;
+  text-transform: uppercase;
+  word-spacing: 3px;
+  font-family: 'Lato', var(--default-font-family);
+}
+
+/* Page Header */
+.page-header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 44px;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #555;
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: -moz-none;
+  z-index: 9999;
+}
+
+.page-header .back-icon {
+  border: none;
+  font-size: 22px;
+  color: #555;
+  background: none;
+  margin-left: 10px;
+  cursor: pointer;
+  outline: none;
+}
+
+.page-header .title {
+  margin-left: -40px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 44px;
+  width: 100%;
+  overflow-x: hidden;
+  padding-bottom: 1px;
+  flex-flow: row wrap;
+}
+
+.stock-card {
+  display: flex;
+  width: 156px;
+  height: 162px;
+  margin: 4px 8px 12px 4px;
+  border: 1px solid #dadce0;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.6s;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  padding: 12px 8px 12px 12px;
+  background-size: cover, 60px;
+  flex-flow: column;
+  text-decoration: none;
+  justify-content: space-between;
+  outline: none;
+}
+
+.stock-card:hover {
+  border-radius: 6px;
+  box-shadow: 0 0 5px #9aa0a6;
+}
+
+.stock-card:focus {
+  box-shadow: 0 0 0 3px rgb(4 156 85 / 50%);
+}
+
+.stock-card .company,
+.stock-card .stock-price {
+  font-family: 'Lato', var(--default-font-family);
+  text-align: right;
+  margin: 0;
+}
+
+.stock-card .company {
+  letter-spacing: 0.01785714em;
+  font-family: 'Lato', Roboto, Arial, sans-serif;
+  font-size: 0.999rem;
+  line-height: 1.25rem;
+  color: #9aa0a6;
+}
+
+.stock-card .stock-price {
+  display: flex;
+  color: var(--theme-color);
+  gap: 15px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.stock-card .stock-price code {
+  color: #9aa0a6;
+}
+
+.stock-card .stock-price span {
+  background: #e6f4ea;
+  letter-spacing: 0.00625em;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  padding: 0 8px;
+  border-radius: 8px;
+  text-shadow: 1px 0 1px rgb(0 0 0 / 20%);
+  transition: 0.6s;
+}
+
+.stock-card .stock-price span:hover {
+  box-shadow: 0 0 0 3px rgba(4, 156, 85, 0.288);
+}
+
+.search-container {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  margin: 10px 0;
+  flex-flow: row wrap;
+  color: #666;
+}
+
+.search-container input {
+  border: 1px solid #dadce0;
+  padding: 8px 5px;
+  border-radius: 4px;
+  min-width: 500px;
+  letter-spacing: 0.01785714em;
+  font-family: 'Lato', Roboto, Arial, sans-serif;
+  font-size: 0.975rem;
+  line-height: 1.25rem;
+  outline: none;
+  transition: 0.6s;
+  color: #666;
+  align-items: center;
+  align-content: center;
+}
+
+.search-container input:focus {
+  box-shadow: 0 0 0 3px rgba(4, 156, 85, 0.288);
+}
+
+.search-container input::placeholder {
+  opacity: 0.4;
+}
+
+.search-container svg {
+  color: #666;
+  margin: 0 20px;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 756px) {
+  .search-container input {
+    min-width: 80%;
+    width: 90%;
+    margin: 0 auto;
+    align-self: center;
+  }
+
+  .search-container {
+    width: 100%;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .stock-card {
+    width: calc(45vw - 18px);
+  }
+}

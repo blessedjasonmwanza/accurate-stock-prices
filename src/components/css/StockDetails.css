@@ -1,0 +1,72 @@
+.card {
+  border-radius: 12px;
+  border: 1px #dadce0 solid;
+  margin-bottom: 16px;
+  padding: 16px 16px 0 16px;
+  box-sizing: border-box;
+  max-width: 500px;
+}
+
+.card .row {
+  border-top: 1px solid #dadce0;
+  padding: 8px 0;
+  min-height: 43px;
+  box-sizing: border-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  align-content: center;
+  letter-spacing: 0.01785714em;
+  font-family: 'Lato', Roboto, Arial, sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  gap: 200px;
+}
+
+.card .row span {
+  color: #666;
+}
+
+.card .row .row-value {
+  font-weight: 500;
+  color: #202124;
+  text-overflow: ellipsis;
+  text-align: right;
+  overflow: hidden;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.stockLogo {
+  max-width: 500px;
+}
+
+.stockInfo h2 {
+  font-family: 'Lato', Roboto, Arial, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.5rem;
+}
+
+.stockInfo p {
+  letter-spacing: 0.025em;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  padding-bottom: 16px;
+  line-height: 1.4;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+@media screen and (max-width: 756px) {
+  .card {
+    width: 99%;
+    max-width: 100%;
+  }
+}
