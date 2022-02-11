@@ -1,7 +1,7 @@
 import '@testing-library/jest-dom';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import { getByPlaceholderText, render } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import store from '../../redux/store/configureStore';
 import Home from '../../pages/Home';
 
