@@ -196,4 +196,7 @@ main {
     justify-content: center;
     text-align: center;
   }
+  .stock-card {
+    width: calc(45vw - 18px);
+  }
 }
