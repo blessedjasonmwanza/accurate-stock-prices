@@ -87,7 +87,7 @@ main {
   background-repeat: no-repeat;
   background-blend-mode: multiply;
   padding: 12px 8px 12px 12px;
-  background-size: cover, 40px;
+  background-size: cover, 60px;
   flex-flow: column;
   text-decoration: none;
   justify-content: space-between;
@@ -111,8 +111,10 @@ main {
 }
 
 .stock-card .company {
-  font-size: 18px;
-  font-weight:bolder;
+  letter-spacing: .01785714em;
+  font-family: 'Lato', Roboto,Arial,sans-serif;
+  font-size: .999rem;
+  line-height: 1.25rem;
   color: #9aa0a6;
 }
 
@@ -144,3 +146,54 @@ main {
   box-shadow: 0 0 0 3px rgba(4, 156, 85, 0.288) !important;
 }
 
+.search-container {
+  display:flex;
+  width: 90%;
+  justify-content: space-between;
+  margin: 10px 0;
+  flex-flow: row wrap;
+  color: #666;
+}
+
+.search-container input {
+  border: 1px solid #dadce0;
+  padding: 8px 5px;
+  border-radius: 4px;
+  min-width: 500px;
+  letter-spacing: .01785714em;
+  font-family: 'Lato', Roboto,Arial,sans-serif;
+  font-size: .975rem;
+  line-height: 1.25rem;
+  outline: none;
+  transition: 0.6s;
+  color: #666;
+  align-items: center;
+  align-content: center;
+}
+.search-container input:focus {
+  box-shadow: 0 0 0 3px rgba(4, 156, 85, 0.288) !important;
+}
+.search-container input::placeholder {
+  opacity: .4;
+}
+
+.search-container svg {
+  color: #666;
+  margin:  0 20px;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 756px) {
+  .search-container input {
+    min-width: 80%;
+    width: 90%;
+    margin: 0 auto;
+    align-self: center;
+  }
+  .search-container {
+    width: 100%;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+  }
+}

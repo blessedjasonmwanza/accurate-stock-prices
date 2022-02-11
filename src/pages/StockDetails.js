@@ -37,7 +37,7 @@ export default function StockDetails() {
   return (
     <>
       <PageHeader  title={companyName}/>
-      <main style={{display:'flex', flexFlow: 'column', gap: '30%', flexFlow: 'row wrap',alignItems: 'center'}}>
+      <main style={{gap:'5%'}}>
         <div className="card">
           <img src={image} className="stockLogo"/>
           <div className="row">

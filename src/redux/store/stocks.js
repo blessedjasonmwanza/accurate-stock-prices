@@ -20,12 +20,10 @@ const stocksSlice = createSlice({
     },
     currentCompany: (state, action) => {
       state.currentData = action.payload;
+    },
+    searchResults: (state, action) => {
+      state.stocksList = action.payload;
     }
-    // searchProfile: (state, action) => {
-    //   const newState = state.stocks.map((mission) => (mission.mission_id === action.payload ? ({ ...mission, status: 'booked' }) : mission));
-    //   state.stocks = newState;
-    //   Save(newState);
-    // },
   },
 });
 
@@ -36,4 +34,5 @@ export const {
   saveProfiles,
   saveStocksList,
   currentCompany,
+  searchResults,
 } = stocksSlice.actions;
